@@ -1,0 +1,10 @@
+{
+  "describe": {
+    "prefix": "describe",
+    "body": ["describe('$1', () => {", "  $2", "})"]
+  },
+  "test": {
+    "prefix": "test",
+    "body": ["test('should $1', () => {", "  $2", "})"]
+  }
+}

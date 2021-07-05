@@ -1,0 +1,75 @@
+{
+  // mongoose
+  "mongoose connection": {
+    "prefix": "mongooseConnection",
+    "body": [
+      "const mongoose = require(\"mongoose\");",
+      "",
+      "mongoose",
+      "  .connect(process.env.MONGODB_URI, {",
+      "    useUnifiedTopology: true,",
+      "    useNewUrlParser: true,",
+      "    useCreateIndex: true,",
+      "  })",
+      "  .then(() => {",
+      "    console.log(\"-> Connected to db\");",
+      "  })",
+      "  .catch((error) => console.log(\"Not connected to db -> \", error));",
+      "",
+      "module.exports = mongoose;"
+    ]
+  },
+  "mongoose schema": {
+    "prefix": "mongooseSchema",
+    "body": [
+      "const ${1:User} = new mongoose.Schema([",
+      "  {",
+      "    ${2:name}: {",
+      "      type: String,",
+      "      required: [true, \"${2/(.*)/${2:/capitalize}/} is required\"],",
+      "      trim: true,",
+      "      unique: true,",
+      "    },",
+      "  },",
+      "  {",
+      "    versionKey: false,",
+      "  },",
+      "]);",
+      "",
+      "const ${1:User}Schema = mongoose.model(\"User\", ${1:User});",
+      "",
+      "module.exports = ${1:User}Schema;"
+    ]
+  },
+  // express
+  "express router": {
+    "prefix": "newRoute",
+    "body": [
+      "router.${1:post}('/${2:login}', async (req, res) => {",
+      "  try {",
+      "    const { ${3:name} } = req.body;",
+      "    // const { ${3:name} } = req.params;",
+      "",
+      "    return res.send({",
+      "      error: false,",
+      "    });",
+      "  } catch {",
+      "    return res.status(406).send({",
+      "      error: 'An error has occurred',",
+      "    });",
+      "  }",
+      "});",
+      ""
+    ]
+  },
+  // environment
+  "set environment variables": {
+    "prefix": "setEnvironment",
+    "body": [
+      "if (process.env.${1:NODE_ENV} !== '${2:production}') {",
+      "  require('dotenv').config();",
+      "}",
+      ""
+    ]
+  }
+}

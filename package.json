@@ -1,0 +1,70 @@
+{
+  "name": "react-node-snippets",
+  "publisher": "celsodias",
+  "displayName": "React and Node snippets created by @celsodias12",
+  "description": "React and Node snippets",
+  "version": "0.0.1",
+  "icon": "./assets/logo.jpeg",
+  "galleryBanner": {
+    "color": "#030518",
+    "theme": "dark"
+  },
+  "keywords": [
+    "react",
+    "react native",
+    "node",
+    "nodejs",
+    "typescript",
+    "react typescript",
+    "react native typescript",
+    "snippets",
+    "snippets react",
+    "snippets react native",
+    "snippets node",
+    "snippets nodejs",
+    "snippets react typescript",
+    "snippets react native typescript"
+  ],
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "'javascript','javascriptreact','typescript','typescriptreact'",
+        "path": "./snippets/snippets-globals.code-snippets"
+      },
+      {
+        "language": "'javascript','javascriptreact'",
+        "path": "./snippets/snippets-node.code-snippets"
+      },
+      {
+        "language": "'javascript','javascriptreact'",
+        "path": "./snippets/snippets-react.code-snippets"
+      },
+      {
+        "language": "'javascript','javascriptreact'",
+        "path": "./snippets/snippets-react.native.code-snippets"
+      },
+      {
+        "language": "'javascript','javascriptreact'",
+        "path": "./snippets/snippets-test.code-snippets"
+      },
+      {
+        "language": "'typescript','typescriptreact'",
+        "path": "./snippets/snippets-ts.node.code-snippets"
+      },
+      {
+        "language": "'typescript','typescriptreact'",
+        "path": "./snippets/snippets-ts.react.code-snippets"
+      },
+      {
+        "language": "'typescript','typescriptreact'",
+        "path": "./snippets/snippets-ts.react.native.code-snippets"
+      }
+    ]
+  }
+}

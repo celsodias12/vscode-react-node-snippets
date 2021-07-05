@@ -1,0 +1,226 @@
+{
+  // components
+  "react native import styled components": {
+    "prefix": "rnimpsc",
+    "body": [
+      "import styled from 'styled-components/native';",
+      "",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
+      "`;",
+      ""
+    ]
+  },
+  "react native functional component": {
+    "prefix": "rnfc",
+    "body": [
+      "import React from 'react';",
+      "import { View } from 'react-native';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "  return <View></View>;",
+      "}",
+      ""
+    ]
+  },
+  "react native class component": {
+    "prefix": "rncc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { View, Text } from 'react-native';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "export default class ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} extends Component {",
+      "  constructor(props) {",
+      "    super(props);",
+      "    this.state = {};",
+      "  }",
+      "",
+      "  render() {",
+      "    return (",
+      "      <View></View>",
+      "    );",
+      "  }",
+      "}",
+      ""
+    ]
+  },
+  // styles
+  "react native styleSheet create": {
+    "prefix": "rnstyleSheet",
+    "body": [
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    $1",
+      "  },",
+      "});",
+      ""
+    ]
+  },
+  // navigation v5
+  "react native navigation stack": {
+    "prefix": "rnnstack",
+    "body": [
+      "import React from 'react';",
+      "import { NavigationContainer } from '@react-navigation/native';",
+      "import { createStackNavigator } from '@react-navigation/stack';",
+      "",
+      "import { Home } from '../screens/Home';",
+      "",
+      "const Stack = createStackNavigator();",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "",
+      "  return (",
+      "    <NavigationContainer>",
+      "      <Stack.Navigator>",
+      "        <Stack.Screen name='Home' component={Home} />",
+      "      </Stack.Navigator>",
+      "    </NavigationContainer>",
+      "  );",
+      "}",
+      ""
+    ]
+  },
+  "react native navigation drawer": {
+    "prefix": "rnndrawer",
+    "body": [
+      "import React from 'react';",
+      "import { NavigationContainer } from '@react-navigation/native';",
+      "import { createDrawerNavigator } from '@react-navigation/drawer';",
+      "",
+      "import { Home } from '../screens/Home';",
+      "",
+      "const Drawer = createDrawerNavigator();",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "",
+      "  return (",
+      "    <NavigationContainer>",
+      "      <Drawer.Navigator>",
+      "        <Drawer.Screen name='Home' component={Home} />",
+      "      </Drawer.Navigator>",
+      "    </NavigationContainer>",
+      "  );",
+      "}",
+      ""
+    ]
+  },
+  "react native navigation tabs": {
+    "prefix": "rnntabs",
+    "body": [
+      "import React from 'react';",
+      "import { NavigationContainer } from '@react-navigation/native';",
+      "import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';",
+      "",
+      "import { Home } from '../screens/Home';",
+      "",
+      "const Tab = createBottomTabNavigator();",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "  return (",
+      "    <NavigationContainer>",
+      "      <Tab.Navigator>",
+      "        <Tab.Screen name='Home' component={Home} />",
+      "      </Tab.Navigator>",
+      "    </NavigationContainer>",
+      "  );",
+      "}",
+      ""
+    ]
+  },
+  // reactotron
+  "react native reactotron": {
+    "prefix": "rnreactotron",
+    "body": [
+      "import Reactotron, { overlay, openInEditor } from 'reactotron-react-native';",
+      "import { reactotronRedux } from 'reactotron-redux';",
+      "import AsyncStorage from '@react-native-community/async-storage';",
+      "",
+      "  // import this archive in your App.js. Example: import './src/config/reactotron';",
+      "",
+      "if (__DEV__) {",
+      "  // if it doesn't work with localhost use your computer ip",
+      "  const tron = Reactotron.configure({ host: 'localhost' })",
+      "    .useReactNative()",
+      "    .use(reactotronRedux())",
+      "    .use(overlay())",
+      "    .use(openInEditor())",
+      "    .setAsyncStorageHandler(AsyncStorage)",
+      "    .connect();",
+      "",
+      "  tron.clear();",
+      "",
+      "  console.r = tron;",
+      "} else {",
+      "  const noop = () => undefined;",
+      "",
+      "  console.r = {",
+      "    configure: noop,",
+      "    connect: noop,",
+      "    use: noop,",
+      "    useReactNative: noop,",
+      "    clear: noop,",
+      "    log: noop,",
+      "    logImportant: noop,",
+      "    display: noop,",
+      "    error: noop,",
+      "    createEnhancer: noop,",
+      "  };",
+      "}",
+      ""
+    ]
+  },
+  // redux
+  "react native persist store": {
+    "prefix": "rnps",
+    "body": [
+      "import { createStore } from 'redux';",
+      "import { persistStore, persistReducer } from 'redux-persist';",
+      "import AsyncStorage from '@react-native-community/async-storage';",
+      "",
+      "import Reducers from './reducers/index';",
+      "",
+      "const persistedReducer = persistReducer(",
+      "  {",
+      "    key: 'root',",
+      "    storage: AsyncStorage,",
+      "    whitelist: ['user'],",
+      "  },",
+      "  Reducers",
+      ");",
+      "",
+      "// if not using reactotron delete 'console.r.createEnhancer()'",
+      "export const store = createStore(persistedReducer, console.r.createEnhancer());",
+      "export const persistor = persistStore(store);",
+      ""
+    ]
+  },
+  // responsiveness
+  "react native normalize font": {
+    "prefix": "rnnormalizeFont",
+    "body": [
+      "import { Dimensions, Platform, PixelRatio } from 'react-native';",
+      "",
+      "const { width: SCREEN_WIDTH } = Dimensions.get('window');",
+      "",
+      "// based on iphone 5s's scale",
+      "const scale = SCREEN_WIDTH / 320;",
+      "",
+      "export function normalize(size) {",
+      "  const newSize = size * scale;",
+      "",
+      "  if (Platform.OS === 'ios') {",
+      "    return Math.round(PixelRatio.roundToNearestPixel(newSize));",
+      "  }",
+      "",
+      "  return Math.round(PixelRatio.roundToNearestPixel(newSize)) - 2;",
+      "}",
+      ""
+    ]
+  }
+}
