@@ -50,7 +50,7 @@
   },
   // styles
   "react native styleSheet create": {
-    "prefix": "rnstyleSheet",
+    "prefix": "rnStyleSheet",
     "body": [
       "const styles = StyleSheet.create({",
       "  container: {",
@@ -134,14 +134,14 @@
     ]
   },
   // reactotron
-  "react native reactotron": {
-    "prefix": "rnreactotron",
+  "react native reactotron config file": {
+    "prefix": "rnreactotronConfig",
     "body": [
       "import Reactotron, { overlay, openInEditor } from 'reactotron-react-native';",
       "import { reactotronRedux } from 'reactotron-redux';",
       "import AsyncStorage from '@react-native-community/async-storage';",
       "",
-      "  // import this archive in your App.js. Example: import './src/config/reactotron';",
+      "// import this archive in your App.js. Example: import './src/config/reactotron';",
       "",
       "if (__DEV__) {",
       "  // if it doesn't work with localhost use your computer ip",
@@ -202,7 +202,7 @@
   },
   // responsiveness
   "react native normalize font": {
-    "prefix": "rnnormalizeFont",
+    "prefix": "rnNormalizeFont",
     "body": [
       "import { Dimensions, Platform, PixelRatio } from 'react-native';",
       "",

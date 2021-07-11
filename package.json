@@ -1,10 +1,10 @@
 {
   "name": "react-node-snippets",
-  "publisher": "celsodias",
-  "displayName": "React and Node snippets created by @celsodias12",
-  "description": "React and Node snippets",
-  "version": "0.0.1",
-  "icon": "./assets/logo.jpeg",
+  "publisher": "celsodias12",
+  "displayName": "React/React-native/Node snippets",
+  "description": "React and Node snippets.",
+  "version": "1.0.0",
+  "icon": "images/logo.png",
   "galleryBanner": {
     "color": "#030518",
     "theme": "dark"
@@ -17,13 +17,15 @@
     "typescript",
     "react typescript",
     "react native typescript",
+    "keybindings",
     "snippets",
     "snippets react",
     "snippets react native",
     "snippets node",
     "snippets nodejs",
     "snippets react typescript",
-    "snippets react native typescript"
+    "snippets react native typescript",
+    "redux"
   ],
   "engines": {
     "vscode": "^1.57.0"
@@ -31,38 +33,93 @@
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "url": "https://github.com/celsodias12/vscode-react-node-snippets"
+  },
+  "homepage": "https://github.com/celsodias12/vscode-react-node-snippets",
+  "bugs": {
+    "url": "https://github.com/celsodias12/vscode-react-node-snippets/issues"
+  },
   "contributes": {
     "snippets": [
       {
-        "language": "'javascript','javascriptreact','typescript','typescriptreact'",
+        "language": "markdown",
+        "path": "./snippets/snippets-readme.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-nest.code-snippets"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/snippets-globals.code-snippets"
       },
       {
-        "language": "'javascript','javascriptreact'",
+        "language": "javascriptreact",
+        "path": "./snippets/snippets-globals.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-globals.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets-globals.code-snippets"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/snippets-node.code-snippets"
       },
       {
-        "language": "'javascript','javascriptreact'",
+        "language": "javascriptreact",
+        "path": "./snippets/snippets-node.code-snippets"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/snippets-react.code-snippets"
       },
       {
-        "language": "'javascript','javascriptreact'",
+        "language": "javascriptreact",
+        "path": "./snippets/snippets-react.code-snippets"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/snippets-react.native.code-snippets"
       },
       {
-        "language": "'javascript','javascriptreact'",
+        "language": "javascriptreact",
+        "path": "./snippets/snippets-react.native.code-snippets"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/snippets-test.code-snippets"
       },
       {
-        "language": "'typescript','typescriptreact'",
+        "language": "javascriptreact",
+        "path": "./snippets/snippets-test.code-snippets"
+      },
+      {
+        "language": "typescript",
         "path": "./snippets/snippets-ts.node.code-snippets"
       },
       {
-        "language": "'typescript','typescriptreact'",
+        "language": "typescriptreact",
+        "path": "./snippets/snippets-ts.node.code-snippets"
+      },
+      {
+        "language": "typescript",
         "path": "./snippets/snippets-ts.react.code-snippets"
       },
       {
-        "language": "'typescript','typescriptreact'",
+        "language": "typescriptreact",
+        "path": "./snippets/snippets-ts.react.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-ts.react.native.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets/snippets-ts.react.native.code-snippets"
       }
     ]

@@ -47,8 +47,9 @@
       ");"
     ]
   },
+  // reactotron
   "print to reactotron console": {
-    "prefix": "rlog",
+    "prefix": "tronLog",
     "body": ["console.r.log($1);", ""]
   },
   // state
@@ -409,7 +410,7 @@
     ]
   },
   "react combine reducers": {
-    "prefix": "rcreducer",
+    "prefix": "rcombreducer",
     "body": [
       "import { combineReducers } from 'redux';",
       "import user from './user';",
@@ -417,6 +418,19 @@
       "export default combineReducers({",
       "  user,",
       "});"
+    ]
+  },
+  // useEffect
+  "useEffect": {
+    "prefix": "useEffect",
+    "body": [
+      "useEffect(() => {",
+      "  ${1}",
+      "  return () => {",
+      "    ${2}",
+      "  }",
+      "}, [${3}])",
+      ""
     ]
   }
 }

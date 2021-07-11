@@ -24,9 +24,9 @@
     "body": [
       "const ${1:User} = new mongoose.Schema([",
       "  {",
-      "    ${2:name}: {",
+      "    ${3:name}: {",
       "      type: String,",
-      "      required: [true, \"${2/(.*)/${2:/capitalize}/} is required\"],",
+      "      required: [true, \"${3:name} is required\"],",
       "      trim: true,",
       "      unique: true,",
       "    },",
@@ -36,14 +36,14 @@
       "  },",
       "]);",
       "",
-      "const ${1:User}Schema = mongoose.model(\"User\", ${1:User});",
+      "const ${1:User}Schema = mongoose.model(\"${2:User}\", ${1:User});",
       "",
       "module.exports = ${1:User}Schema;"
     ]
   },
   // express
   "express router": {
-    "prefix": "newRoute",
+    "prefix": "expressNewRoute",
     "body": [
       "router.${1:post}('/${2:login}', async (req, res) => {",
       "  try {",
@@ -64,7 +64,7 @@
   },
   // environment
   "set environment variables": {
-    "prefix": "setEnvironment",
+    "prefix": "environmentSet",
     "body": [
       "if (process.env.${1:NODE_ENV} !== '${2:production}') {",
       "  require('dotenv').config();",

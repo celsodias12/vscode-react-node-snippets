@@ -1,65 +1,91 @@
-# celsodias12 README
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">React/React native/NodeJS Snippets</h1>
+</p>
 
-This is the README for your extension "celsodias12". After writing up a brief description, we recommend including the following sections.
+### Supported Languages
 
-## Features
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
+- Markdown (.md)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Snippets info
 
-For example if there is an image subfolder under your extension project workspace:
+Below is a list of all available Snippets and prefix for each one. The **→** means the `TAB` key.
+<br/>
+<br/>
 
-\!\[feature X\]\(images/feature-x.png\)
+### React
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+|                     Prefix | Method                      |
+| -------------------------: | --------------------------- |
+|            `axiosCreate →` | axios create                |
+|  `axiosInterceptRequest →` | axios intercept request     |
+| `axiosInterceptResponse →` | axios intercept response    |
+|                `tronLog →` | print to reactotron console |
+|               `useState →` | useState                    |
+|              `useEffect →` | useEffect                   |
+|                  `theme →` | theme                       |
+|               `rreducer →` | react reducer               |
+|           `rcombreducer →` | react combine reducers      |
 
-## Requirements
+### React Native
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+|              Prefix | Method                                |
+| ------------------: | ------------------------------------- |
+|         `rnimpsc →` | react native import styled components |
+|            `rnfc →` | react native functional component     |
+|            `rncc →` | react native class component          |
+|    `rnStyleSheet →` | react native styleSheet create        |
+|        `rnnstack →` | react native navigation stack         |
+|       `rnndrawer →` | react native navigation drawer        |
+|         `rnntabs →` | react native navigation tabs          |
+|    `rnreactotron →` | react native reactotron config file   |
+|            `rnps →` | react native persist store            |
+| `rnNormalizeFont →` | react native normalize font           |
 
-## Extension Settings
+### Node
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+|                 Prefix | Method                    |
+| ---------------------: | ------------------------- |
+| `mongooseConnection →` | mongoose connection       |
+|     `mongooseSchema →` | mongoose schema           |
+|    `expressNewRoute →` | express router            |
+|     `environmentSet →` | set environment variables |
 
-For example:
+### Globals
 
-This extension contributes the following settings:
+|      Prefix | Method                   |
+| ----------: | ------------------------ |
+|     `log →` | console log object       |
+| `promise →` | new promise              |
+|     `imp →` | import module            |
+|   `impas →` | import module as         |
+|  `expdas →` | export module default as |
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+<!-- CONTRIBUTING -->
 
-## Known Issues
+## Contributing
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Release Notes
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Users appreciate release notes as you update your extension.
+<!-- LICENSE -->
 
-### 1.0.0
+## License
 
-Initial release of ...
+Distributed under the MIT License. See `LICENSE` for more information.
 
-### 1.0.1
+<!-- CONTACT -->
 
-Fixed issue #.
+## Contact
 
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+@celsodias12 - [Github](https://github.com/celsodias12)
