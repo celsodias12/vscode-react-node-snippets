@@ -58,6 +58,25 @@ Below is a list of all available Snippets and prefix for each one. The **→** m
 |    `expressNewRoute →` | express router            |
 |     `environmentSet →` | set environment variables |
 
+### Express
+
+|              Prefix | Method         |
+| ------------------: | -------------- |
+| `expressNewRoute →` | express router |
+
+### Mongoose
+
+|                 Prefix | Method              |
+| ---------------------: | ------------------- |
+| `mongooseConnection →` | mongoose connection |
+|     `mongooseSchema →` | mongoose schema     |
+
+### Nest
+
+|                      Prefix | Method             |
+| --------------------------: | ------------------ |
+| `nestDatabaseBConnection →` | nest db connection |
+
 ### Globals
 
 |      Prefix | Method                   |
