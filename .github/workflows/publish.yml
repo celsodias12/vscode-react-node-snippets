@@ -1,0 +1,25 @@
+name: 'publish'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    name: publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install vsce
+        run: npm i -g vsce
+
+      - name: Publish
+        run: vsce publish -p ${{ secrets.VSCE_TOKEN }}

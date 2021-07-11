@@ -1,10 +1,15 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">React/React native/NodeJS Snippets</h1>
+  <h2 align="center">React/React native/NodeJS Snippets</h2>
 </p>
 
 ![Show snippets](https://raw.githubusercontent.com/celsodias12/vscode-react-node-snippets/master/images/example.gif)
+
+## Snippets info
+
+Below is a list of all available Snippets and prefix for each one. The **→** means the `TAB` key.
+<br/>
 
 ### Supported Languages
 
@@ -13,12 +18,6 @@
 - JavaScript React (.jsx)
 - TypeScript React (.tsx)
 - Markdown (.md)
-
-### Snippets info
-
-Below is a list of all available Snippets and prefix for each one. The **→** means the `TAB` key.
-<br/>
-<br/>
 
 ### React
 
