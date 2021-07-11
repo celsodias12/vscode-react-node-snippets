@@ -4,6 +4,8 @@
   <h1 align="center">React/React native/NodeJS Snippets</h1>
 </p>
 
+![Show snippets](https://raw.githubusercontent.com/celsodias12/vscode-react-node-snippets/master/images/example.gif)
+
 ### Supported Languages
 
 - JavaScript (.js)
