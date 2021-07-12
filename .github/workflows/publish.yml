@@ -27,7 +27,8 @@ jobs:
         run: vsce package
 
       - name: Publish
-        run: vsce publish -p $VSCE_TOKEN
+        with:
+          args: 'vsce publish -p $VSCE_TOKEN'
         env:
           VSCE_TOKEN: ${{secrets.VSCE_TOKEN}}
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
