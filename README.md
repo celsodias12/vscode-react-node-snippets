@@ -1,3 +1,8 @@
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/celsodias12.react-node-snippets.svg?label=Visual%20Studio%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=celsodias12.react-node-snippets)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/celsodias12.react-node-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=celsodias12.react-node-snippets)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/celsodias12.react-node-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=celsodias12.react-node-snippets)
+![GitHub](https://img.shields.io/github/license/celsodias12/vscode-react-node-snippets)
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
