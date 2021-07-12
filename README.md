@@ -4,7 +4,6 @@
 ![GitHub](https://img.shields.io/github/license/celsodias12/vscode-react-node-snippets)
 
 <!-- PROJECT LOGO -->
-<br />
 <p align="center">
   <h2 align="center">React/React native/NodeJS Snippets</h2>
 </p>

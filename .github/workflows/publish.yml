@@ -23,10 +23,5 @@ jobs:
       - name: Install vsce
         run: npm i -g vsce
 
-      - name: Generate package
-        run: vsce package
-
       - name: Publish
         run: vsce publish -p ${{secrets.VSCE_TOKEN}}
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
