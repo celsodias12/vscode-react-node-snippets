@@ -22,11 +22,13 @@
   "mongoose schema": {
     "prefix": "mongooseSchema",
     "body": [
-      "const ${1:User} = new mongoose.Schema([",
+      "const mongoose = require('${1:yourConnectionFile}');",
+      "",
+      "const ${2:User} = new mongoose.Schema([",
       "  {",
-      "    ${3:name}: {",
+      "    ${4:name}: {",
       "      type: String,",
-      "      required: [true, \"${3:name} is required\"],",
+      "      required: [true, \"${4:name} is required\"],",
       "      trim: true,",
       "      unique: true,",
       "    },",
@@ -36,9 +38,9 @@
       "  },",
       "]);",
       "",
-      "const ${1:User}Schema = mongoose.model(\"${2:User}\", ${1:User});",
+      "const ${2:User}Schema = mongoose.model(\"${3:User}\", ${2:User});",
       "",
-      "module.exports = ${1:User}Schema;"
+      "module.exports = ${2:User}Schema;"
     ]
   },
   // express
