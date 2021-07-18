@@ -52,6 +52,14 @@ Below is a list of all available Snippets and prefix for each one. The **→** m
 |            `rnps →` | react native persist store            |
 | `rnNormalizeFont →` | react native normalize font           |
 
+### Axios
+
+|                     Prefix | Method                   |
+| -------------------------: | ------------------------ |
+|            `axiosCreate →` | axios create             |
+|  `axiosInterceptRequest →` | axios intercept request  |
+| `axiosInterceptResponse →` | axios intercept response |
+
 ### Node
 
 |                 Prefix | Method                    |
@@ -89,6 +97,13 @@ Below is a list of all available Snippets and prefix for each one. The **→** m
 |     `imp →` | import module            |
 |   `impas →` | import module as         |
 |  `expdas →` | export module default as |
+
+### Readme
+
+|          Prefix | Method                |
+| --------------: | --------------------- |
+| `readmeBasic →` | basic readme template |
+|  `readmeBest →` | best readme template  |
 
 <!-- CONTRIBUTING -->
 
