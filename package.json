@@ -3,7 +3,7 @@
   "publisher": "celsodias12",
   "displayName": "React/React-native/Node snippets",
   "description": "React and Node snippets.",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "license": "MIT",
   "icon": "images/logo.png",
   "galleryBanner": {
@@ -73,6 +73,14 @@
       },
       {
         "language": "javascriptreact",
+        "path": "./snippets/snippets-node.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-node.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets/snippets-node.code-snippets"
       },
       {

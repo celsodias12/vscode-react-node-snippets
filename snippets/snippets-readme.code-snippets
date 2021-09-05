@@ -38,7 +38,7 @@
     ]
   },
   "best readme template": {
-    "prefix": "readmeBest",
+    "prefix": "readmeAdvanced",
     "body": [
       "<!-- please replace your_github_username, your_github_repo_name, your_username_linkedin, your_product_screenshot_link_or_directory and your_logo_link_or_directory. After that delete this comment --->",
       "",
